@@ -1,0 +1,9 @@
+version: "3"
+services:
+  sdc:
+    image: graphpathai/datacollector:3.1.2.0
+    ports:
+      - "18630:18630"
+    volumes:
+      - "./streamsets/datasets:/home/sdc/data"
+      - "./streamsets/data:/data"
