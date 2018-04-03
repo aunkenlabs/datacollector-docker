@@ -20,6 +20,7 @@ docker service create \
   --restart-delay 5s \
   --log-opt max-size=50m \
   --log-opt max-file=5 \
+  -e SDC_JAVA_OPTS="-Xmx512m -Xms512m -server" \
   --limit-memory 1G \
   --constraint 'node.hostname == $VM' \
   --mount type=bind,src=/home/USER/streamsets/datasets,dst=/home/sdc/data \
