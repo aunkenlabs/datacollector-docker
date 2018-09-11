@@ -1,7 +1,7 @@
 version: "3"
 services:
   sdc:
-    image: graphpathai/datacollector:3.1.2.0
+    image: graphpathai/datacollector:3.4.2
     ports:
       - "18630:18630"
     volumes:
