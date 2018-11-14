@@ -1,5 +1,6 @@
 ARG VERSION
 FROM streamsets/datacollector:$VERSION
+ARG VERSION
 
 COPY ./libs-common-lib /opt/streamsets-datacollector-$VERSION/streamsets-libs-extras
 COPY ./user-libs /opt/streamsets-datacollector-user-libs
